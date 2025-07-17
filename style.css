@@ -573,6 +573,7 @@ section {
 }
 
 /* Hackathons Section */
+/* Hackathons Section */
 .hackathons {
   background: var(--bg-secondary);
   padding: 4rem 2rem;
@@ -607,7 +608,7 @@ section {
 .hackathon-item {
   flex: 1 1 0;
   max-width: 32%;
-    background: var(--bg-primary);
+  background: var(--bg-primary);
   padding: 2rem 1.8rem;
   border-radius: 16px;
   box-shadow: 0 14px 28px rgba(0, 86, 179, 0.15);
@@ -658,11 +659,11 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  margin-top: 1rem;
 }
 
 .tech-tag {
-  background: #0056b3;
-   background: var(--bg-primary);
+  background: var(--bg-primary);
   padding: 0.4rem 0.9rem;
   border-radius: 14px;
   font-size: 0.85rem;
@@ -698,6 +699,22 @@ section {
 .hackathon-wins img:hover {
   transform: scale(1.05);
   box-shadow: 0 28px 60px rgba(0, 123, 255, 0.5);
+}
+
+/* ✅ Mobile Responsiveness for Hackathon Section */
+@media (max-width: 768px) {
+  .hackathon-items-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hackathon-item {
+    max-width: 100%;
+  }
+
+  .hackathon-wins img {
+    max-width: 90%;
+  }
 }
 
 /* Contact Section */
